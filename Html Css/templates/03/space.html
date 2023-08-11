@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 공간 분할</title>
+</head>
+<body>
+    <h1>블록 타입의 요소</h1>
+    <p style="border: 3px solid red;">
+        p태그는 블록요소가 아닌 인라인 요소. 따라서 p태그는 자신의 영역만큼 차지하는 태그
+    </p>
+    <div style="border: 3px solid blue;">
+        <h1>div 요소를 적용한 스타일</h1>
+        <p>
+            div 요소는 주로 여러 요소들의 스타일을 한 번에 적용하기 위해 사용
+        </p>
+    </div>
+    <hr>
+    <h1>인라인 타입의 요소</h1>
+    <p>
+        <span style="background-color: gray; color: orangered;">p태그</span>는 자신의 영역만큼만 차지한다. 
+        p, div, h, ul , ol ... 
+        <span style="background-color: black; color: #fff;">display</span> 속성값 블록 요소
+    </p>
+
+    <hr>
+    <h1>iframe 요소</h1>
+    <iframe src="./table.html"
+     style="width: 100%; height: 300px; border: 3px dashed mar">
+    </iframe>
+    <hr>
+    <p>
+        <a href="./test.html" target="frame_trg">test 페이지로 이동</a>
+    </p>
+    <iframe src="./main.html" name="#main"></iframe>
+</body>
+</html>

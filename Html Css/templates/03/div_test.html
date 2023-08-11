@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div test</title>
+    <style>
+        .wrapper {
+            position: relative;
+            left: 22%;
+        }
+
+        #Logo, #Header, #Nav, #Section1, #Section2, #Footer {
+            text-align: center;
+        }
+        #Logo, #Header, #Section1, #Section2 {
+            border: 1px solid black;
+        }
+
+        #Logo {
+            width : 15%;
+            height: 50px;
+            background-color: #70cc30;
+            color: #fff;
+            float: left;
+        }
+
+        #Header {
+            width: 55%;
+            height: 50px;
+            background-color: #f1c700;
+            color: #fff;
+        }
+
+        #Nav {
+            width: 55.2%;
+            height: 50px;
+            background-color: #4fafff;
+            color: #fff;
+            padding-top: 5px;
+        }
+
+        #Section1 {
+            width: 27%;
+            background-color: #eee;
+            font-weight: 600;
+            padding: 100px 0;
+            float: left;
+        }
+
+        #Section2 {
+            width: 55%;
+            background-color: #eee;
+            font-weight: 600;
+            padding: 100px 0;
+        }
+
+        #Footer {
+            width: 55.2%;
+            height: 50px;
+            background-color: #dc6e3f;
+            color: #fff;
+            padding-top: 5px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="Logo"><p>Logo</p></div>
+        <div id="Header"><p>Header</p></div>
+        <div id="Nav"><p>Nav</p></div>
+        <div id="Section1"><p>section</p></div>
+        <div id="Section2"><p>section</p></div>
+        <div id="Footer"><p>Footer</p></div>
+    </div>
+</body>
+</html>

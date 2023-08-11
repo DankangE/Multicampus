@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃</title>
+    <style>
+        div {
+            margin: 20px;
+            background-color: rgb(41, 41, 58);
+            padding: 20px;
+            border: 1px solid rgb(220, 220, 220);
+        }
+
+        #header {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #sidebar1 {
+            float: left;
+            background-color: gainsboro;
+            width: 15%;
+            height: 250px;
+        }
+
+        #contents {
+            float: left;
+            width: 48.5%;
+            background-color: aliceblue;
+            height: 250px;
+        }
+
+        #sidebar2 {
+            float: right;
+            background-color: antiquewhite;
+            width: 15%;
+            height: 250px;
+        }
+
+        #footer {
+            clear: both;
+            background-color: dimgrey;
+            color: beige;
+        }
+
+        #sidebar1 ul {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        #sidebar1 ul li {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(25, 14, 1);
+        }
+
+        #sidebar1 ul li:hover {
+            background-color: #dcb896;
+        }
+        #sidebar2 ul {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        #sidebar2 ul li {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(25, 14, 1);
+        }
+
+        #sidebar2 ul li:hover {
+            background-color: #dcb896;
+        }
+
+       
+        #navbar {
+            height: 50px;
+            display: flex;
+            background-color: rgb(125, 146, 211);
+        }
+
+        #navbar #logo {
+            font-size: 1.2rem;
+        }
+
+
+        #navbar h2 {
+            margin: 0px;
+            margin-right: 300px;
+        }
+
+        #navbar ul {
+            display: flex;
+            text-decoration: none;
+        }
+
+        #navbar ul li {
+            padding-top: 0px;
+            list-style: none;
+            padding-right: 50px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+			<h1>사이트 제목</h1>
+		</div>
+        <div id="navbar">
+            <ul id="logo"><h2>LOGO</h2>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+        </div>
+		<div id="sidebar1">
+			<h2>사이드 바</h2>
+            <ul>
+                <li>항목 1</li>
+                <li>항목 2</li>
+                <li>항목 3</li>
+                <li>항목 4</li>
+            </ul>
+		</div>
+		<div id="contents">
+			<h2>본문</h2>
+            <p>재산권의 행사는 공공복리에 적합하도록 하여야 한다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다.</p>
+
+            <p>대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다.</p>
+		</div>
+        <div id="sidebar2">
+			<h2>사이드 바</h2>
+            <ul>
+                <li>항목 1</li>
+                <li>항목 2</li>
+                <li>항목 3</li>
+                <li>항목 4</li>
+            </ul>
+		</div>
+		<div id="footer">
+			<h2>푸터</h2>
+            <p>@Copyright Multi-Campus</p>
+            <p>Tel. 010-1234-5678</p>
+		</div>
+    </div>
+</body>
+</html>

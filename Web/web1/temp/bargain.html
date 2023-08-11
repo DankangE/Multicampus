@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bargain.css">
+</head>
+
+<body>
+
+    <script src="/js/bargain.js"></script>
+    <div id="contents">
+        <div id="intro">
+
+            <script>
+                alert("환영합니다"); // 안내창 출력
+
+                var name = prompt("이름을 입력하세요", "홍길동"); // 입력창 출력
+                document.write("<p><b><big>" + name + "님 환영합니다.</big></b></p>"); // 화면 출력
+
+                var reply = confirm("업무를 시작하시겠습니까?"); // 확인창 출력
+            </script>
+        </div>
+        <img src="./images/sale.png">
+        <ul>
+            <li>
+                <label for="oPrice">판매 금액</label>
+                <input type="text" id="oPrice">원
+            </li>
+            <li>
+                <label for="dcRate">할인율</label>
+                <input type="text" id="dcRate">%
+            </li>
+            <li>
+                <button onclick="showPrice()">할인 가격 계산</button>
+            </li>
+        </ul>
+        <div id="showResult">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

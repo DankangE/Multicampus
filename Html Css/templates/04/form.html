@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html5 폼 및 폼요소</title>
+</head>
+
+<body>
+    <form action="search.php" method="post">
+        <input type="text" title="검색">
+        <input type="submit" value="검색">
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <label>이름
+                <input type="text" id="name" placeholder="이름을 입력하세요.">
+            </label>
+            <label>성별
+                <input type="text" id="ss">
+            </label>
+            <label>메일주소
+                <input type="text" id="mail" placeholder="메일 주소를 입력하세요.">
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디</label>
+                    <input type="text" id="id" size="10">
+                </li>
+                <li>
+                    <label for="pwd">비밀번호</label>
+                    <input type="password" id="pwd" size="10">
+                </li>
+            </ul>
+        </fieldset>
+        <br><br><br>
+        <div>
+
+
+            <fieldset>
+                <legend>상품 선택</legend>
+                <p><b>주문한 살품을 선택해주세요.</b></p>
+                <ul>
+                    <li>
+                        <label><input type="checkbox" id="s_3" value="s_3">선물용 3kg</label>
+                        <input type="number" value="1">개
+                    </li>
+                    <li>
+                        <label><input type="checkbox" id="s_5" value="s_5">선물용 5kg</label>
+                        <input type="number" min="1" max="5">개
+                    </li>
+                    <li>
+                        <label><input type="checkbox" id="g_3" value="g_3">가정용 3kg</label>
+                        <input type="range" min="1" max="5" value="1">개
+                    </li>
+                    <li>
+                        <label><input type="checkbox" id="g_5" value="g_5">가정용 5kg</label>
+                        <input type="range" min="1" max="5">개
+                    </li>
+                </ul>
+                <p><b>포장 선택</b></p>
+                <label><input type="radio" name="gift" value="yes">선물포장</label>
+                <label><input type="radio" name="gift" value="no">선물포장안함</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul id="shipping">
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="user-name" size="10" autofocus required>
+                    </li>
+                    <li>
+                        <label for="class">배송 지역</label>
+                        <select id="class" size="5" multiple>
+                            <option value="지역선택" selected>지역선택</option>
+                            <option value="서울">서울</option>
+                            <option value="경기">경기</option>
+                            <option value="강원">강원</option>
+                            <option value="충청">충청</option>
+                            <option value="전라">전라</option>
+                            <option value="경상">경상</option>
+                            <option value="제주">제주</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="user-sub-class">시군구</label>
+                        <select id="cbo-class">
+                            <optgroup label="수도권">
+                                <option value="서울시" selected>서울시</option>
+                                <option value="창원시">창원시</option>
+                                <option value="대구시">대구시</option>
+                                <option value="남양주">남양주</option>
+                            </optgroup>
+                            <optgroup label="비수도권">
+                                <option value="남양주">인천시</option>
+                                <option value="익산시">익산시</option>
+                                <option value="김포시">김포시</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="name">배송 주소</label>
+                        <input type="text" id="addr" size="50">
+                    </li>
+                    <li>
+                        <label for="name">이메일</label>
+                        <input type="text" id="user-mail" size="20">
+                    </li>
+                    <li>
+                        <label for="name">연락처</label>
+                        <input type="text" id="user-tel" size="10">
+                    </li>
+                    <li>
+                        <label for="user-date">배송일 지정(주문일로부터 최소 3일 이후 지정)</label>
+                        <br>
+                        <input type="date" id="user-date" min="2023-07-08" max="2023-12-31">
+                        <input type="month" id="user-date">
+                        <input type="week" id="user-date">
+                    </li>
+                    <li>
+                        <label for="user-time">현재 시간 출력</label>
+                        <input type="datetime-local">
+                        <input type="time">
+                        <input type="datetime">
+                    </li>
+                    <li>
+                        <label for="user-msg">배송 메시지</label>
+                        <textarea id="user-msg" cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <div>
+                <input type="button" value="공지사항 창 열기" onclick="window.open('templates/03/space.html')">
+                <input type="submit" value="주문하기">
+                <button type="reset">다시작성</button>
+            </div>
+            <div>
+                <p><b>반품하실 상품의 사진을 첨부해주세요.</b></p>
+                <hr>
+                <input type="file">
+            </div>
+            <br>
+            <hr><br>
+            <div>
+                <label for="user-color">선호 색상 선택</label>
+                <input type="color" id="user-color" value="#00ff00">
+            </div>
+            <br>
+            <hr><br>
+            <ul>
+                <li>
+                    <span>관심 분야</span>
+                    <label for="interest"></label>
+                    <input type="text" id="interest" list="choices">
+                    <datalist id="choices">
+                        <option value="컴퓨터" label="컴퓨터"></option>
+                        <option value="게임" label="게임"></option>
+                        <option value="여행" label="여행"></option>
+                        <option value="맛집" label="맛집"></option>
+                        <option value="방콕" label="방콕"></option>
+                    </datalist>
+                </li>
+            </ul>
+        </div>
+    </form>
+    <br>
+    <form oninput="result.value=perseInt(num1.value)+parseInt(num2.value)">
+        <input type="numer" name="num1" value="0">+
+        <input type="numer" name="num2" value="0">=
+        <output name="result" for="num"></output>
+    </form>
+    <form>
+        <ul>
+            <li>
+                <label>10초 남음</label>
+                <!-- 전체 60초중 50초 진행 -->
+                <progress value="50" max="60"></progress>
+            </li>
+            <li>
+                <label>진행율 30%</label>
+                <progress value="30" max="100"></progress>
+            </li>
+        </ul>
+    </form>
+    <br><hr><br>
+    <form>
+        <script>
+            function dwn() {
+                var bar = document.getElementById("bar"),
+                    progress =document.getElementById("progress");
+                    loaded=0;
+                var load = function() {
+                    loaded += 5;
+                    bar.value = loaded;
+
+                    if (loaded == 100) {
+                        clearInterval(beginLoad);
+                        alert("다운로드 완료");
+                    }
+                };
+                var beginLoad = setInterval(function() {
+                    load();
+                }, 100);
+            }
+        </script>
+        <input type="button" value="다운로드 시작" onclick="dwn()">
+        <progress id="bar" value="0" max="100">
+            <span id="progress"></span>
+        </progress>
+    </form>
+    <br><hr><br>
+</body>
+
+</html>
