@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+    <style>
+        body {background: #7e0b7a; color: #fff;}
+        h1::before {content: '1. ';}
+        h1::after {content: ' - 기본';}
+
+        /* 화면 너비에 따라 배경색 변경 */
+
+        /* 화면 너비 0 ~ 1280px : 데스크탑 */
+        @media (max-width: 1280px) {
+            body {background: #b90d5e;}
+            h1::before {content: '2. ';}
+            h1::after {content: ' - 1025px ~ 1280px';}
+        }
+
+        /* 화면 너비 0 ~ 1024px : 노트북 */
+        @media (max-width: 1024px) {
+            body {background: #5a0db9;}
+            h1::before {content: '3. ';}
+            h1::after {content: ' - 961px ~ 1024px';}
+        }
+
+        /* 화면 너비 0 ~ 960px : 노트북 */
+        @media (max-width: 960px) {
+            body {background: #0db957;}
+            h1::before {content: '4. ';}
+            h1::after {content: ' - 769px ~ 960px';}
+        }
+
+        /* 화면 너비 0 ~ 768px : 테블릿 */
+        @media (max-width: 768px) {
+            body {background: #71b90d;}
+            h1::before {content: '5. ';}
+            h1::after {content: ' - 557px ~ 768px';}
+        }
+        
+        /* 화면 너비 0 ~ 576px : 모바일 */
+        @media (max-width: 556px) {
+            body {background: #180db9;}
+            h1::before {content: '5. ';}
+            h1::after {content: ' - 0px ~ 556px';}
+        }
+
+    </style>
+</head>
+<body>
+    <h1>미디어쿼리(MediaQuery)</h1>
+    <p>미디어쿼리는 뷰포트의 크기에 따라 다른 스타일을 적용할 수 있도록 해주는 CSS3의 기능입니다.</p>
+    <p>@media only all and (조건문) {실행문}</p>
+    <ul>
+        <li>@media: 미디어 쿼리 시작을 의미</li>
+        <li>only: 미디어 쿼리 구문을 해석하라는 명령어 </li>
+        <li>all: 미디어 쿼리의 해석 대상을 나타냄</li>
+        <ul>
+            <li>all : 모든 미디어 유형에서 사용할 CSS를 정의</li>
+            <li>print : 인쇄 장치에서 사용할 CSS를 정의</li>
+            <li>screen : 컴퓨터 스크린에서 사용할 CSS를 정의</li>
+            <li>aural : 화면을 읽어 소리로 출력해주는 장치에서 CSS를 정의</li>
+            <li>tv : TV에서 사용할 CSS를 정의</li>
+            <li>handheld : 손에 들고 다니는 장치를 사용할 CSS를 정의</li>
+            <li>projection : 프로젝트를 위한 사용할 CSS를 정의</li>
+        </ul>
+        <li>and : 앞과 두의 조건을 나타낸다.(생략가능)</li>
+        <li>(조건문) : 해당 조건을 설정 할 수 있다.</li>
+        <li>(실행문) : 조건에 따른 실행을 설정한다.</li>
+    </ul>
+</body>
+</html>
