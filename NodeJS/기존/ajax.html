@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        let req = new XMLHttpRequest(); // XMLHttpRequest 객체 생성
+        // req.open('GET', 'https://www.zerocho.com/api/get'); // 요청 생성
+        req.open('GET', './db_config.json', true); // 요청 생성
+        req.send(); // 요청 전송
+
+        req.onreadystatechange = (e) => {
+            if (req.readyState === XMLHttpRequest.DONE) { // 요청이 완료되면
+                if (req.status === 200) { // 응답코드가 200이면
+                    console.log(req.responseText); // 응답값 출력
+                } else {
+                    console.error(req.statusText); // 에러 출력
+                }
+            }
+        }
+    </script>
+</body>
+</html>
