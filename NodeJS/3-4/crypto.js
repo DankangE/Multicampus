@@ -1,4 +1,4 @@
-const crypot = require('crypto');
+const crypto = require('crypto');
 const salt = crypot.randomBytes(128).toString('base64');
 
 const inputPass = 'a12345'
