@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "SQL",
+			"path": "."
+		},
+		{
+			"name": "views",
+			"path": "../../../../../Downloads/views"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
