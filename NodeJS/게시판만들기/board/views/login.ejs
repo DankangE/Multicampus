@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/login.css">
+  <title>로그인</title>
+</head>
+<body>
+    <div class="login-page">
+      <div class="form">  
+        <p><%= msg%></p>        
+        <form method="post" action="/login/login_process" class="login-form">
+          <input class="login-text" type="text" placeholder="userID", name="id">
+          <input class="login-text" type="password" placeholder="password" name="pw">
+          <input class="login-input" type="submit" value="로그인">
+          <p class="message"><a href="/singup">회원가입하기</a></p>
+          <p class="message"><a href="/idpw-find">아이디/패스워드 찾기</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,22 +1,40 @@
+    
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+    background: #8fd143;
+    background: rgb(143, 209, 67);
+    background: linear-gradient(
+      90deg, 
+      rgba(143, 209, 67, 1) 0%,  
+      rgb(182, 234, 122, 1) 50%
+      );
+    font-family: "Roboto", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;  /* aliased를 제거  auto: 브라우저가 결정 */
+  }
 
-a {
-  color: #00B7FF;
-}
+  .index-page {
+    width: 260px;    
+    padding: 8% 0 0;
+    margin: auto;
+  }
+
+  .message {
+    font-family: "Roboto", sans-serif;
+    outline: 0;           /* 외곽선 제거 */
+    background: #5d72db;  /* 배경색 */
+    width: 100%;          /* 너비 */
+    border: 0;            /* 테두리 */
+    margin: 0 0 15px;     /* 위쪽, 오른쪽, 아래쪽 마진 */
+    padding: 15px;        /* 위쪽, 오른쪽, 아래쪽, 왼쪽 패딩 */
+    box-sizing: border-box;  /* 요소의 너비와 높이를 계산하는 방법을 지정 */
+    font-size: 14px;      /* 글자 크기 */
+    text-align: center;  /* 텍스트 정렬 */
+  }
+  
+  .message a {
+    color: #ffffff;    /* 글자색 */
+    text-decoration: none;  /* 텍스트에 밑줄을 긋거나 없앰 */
+  }
 
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #a9a9a9;
-}
-
-th, td {
-  text-align: left;
-  padding: 16px;
-  border: 1px solid #a9a9a9;
-}
+  

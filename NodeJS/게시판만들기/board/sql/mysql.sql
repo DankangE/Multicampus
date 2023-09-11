@@ -1,11 +1,14 @@
 use board_db;
 
-INSERT INTO users VALUES('a123', '123456', '홍길동', '010-1234-1234', 'a123@naver.com');
-INSERT INTO users VALUES('b123', 'a12345', '조정치', '010-1234-1234', 'ssss@naver.com');
+CREATE TABLE board(
+    _no INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '글 번호',
+    _id CHAR(25) NOT NULL COMMENT '아이디',
+    _regdate DATETIME NOT NULL DEFAULT NOW() COMMENT '등록일',
+    _title VARCHAR(100) NOT NULL COMMENT '제목',
+    _doct VARCHAR(300) NOT NULL COMMENT '내용',
+    FOREIGN KEY (_id) REFERENCES users(_id)
+) COMMENT '게시판';
 
-INSERT INTO board VALUES(1, 'a123', now(), '제목 입력', '내용 입력 내용 입력 \n 내용 입력');
-INSERT INTO board VALUES(2, 'b123', now(), '제목 입력', '내용 입력 내용 입력 \n 내용 입력');
+INSERT INTO users VALUES('b123', 'a12345', '서정동', '010-1234-1234', 'ssss@naver.com');
 
-_date = now();
-INSERT INTO board VALUES('a123', _date, '안녕하세요. 가입했습니다.', '가입 인사드립니다. 잘 부탁드립니다.');
-
+insert into board_db.board values(2,'b123', now(), '제목 입력','내용 입력 내용 입력 \n내용 입력');

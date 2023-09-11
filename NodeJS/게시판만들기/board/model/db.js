@@ -1,12 +1,12 @@
 const mysql = require('mysql2');
 const dbconfig = require('../config/dbconfig');
 
-const conn = mysql.createConnection({
-    host : dbconfig.host,
-    user : dbconfig.user,
-    password : dbconfig.password,
-    database : dbconfig.database
-});
+const conn = mysql.createConnection(
+    host = dbconfig.host,
+    user = dbconfig.user,
+    password = dbconfig.password,
+    database = dbconfig.database
+);
 
 conn.connect( (err) => {
     if(err) {
@@ -14,7 +14,7 @@ conn.connect( (err) => {
         console.error(err);
         throw err;
     }
-    console.log('mysql 연결 성공');
+    console.log('mysql 연결성공');
 });
 
 module.exports = conn;
