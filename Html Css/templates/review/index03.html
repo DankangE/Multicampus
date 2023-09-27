@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}        
+        body {background: #cde7dc;}
+        #wrap {width: 100%; margin: 0 auto;}
+        header {width: 100%; height: 150px;  background: #21d078;}
+        aside{float: left; width: 30%; height: 700px; background: #3faa88;}
+        section{float: left; width: 40%; height: 700px; background: #3faa63;}
+        article{float: left; width: 30%; height: 700px; background: #3faa44;}
+        footer{clear: both; width: 100%; height: 150px; background: #034017;}
+
+        /* 화면 너비 0 ~ 1200px */
+        @media (max-width: 1200px) {
+            aside {float: left;  width: 40%;}
+            section {float: left; width: 60%;}
+            article {width: 100%; height: 300px;}
+
+        }
+
+        /* 화면 너비 0 ~ 7680px */
+        @media (max-width: 768px) {
+            aside {float: none;  width: 100%;}
+            section {float: none; width: 100%;}
+        }
+
+        /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px) {
+            header {height: 300px;}
+            aside {height: 300px;}
+            section {height: 300px;}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside></aside>
+        <section></section>
+        <article></article>
+        <footer></footer>   
+    </div> 
+</body>
+</html>

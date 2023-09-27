@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="css/bookList.css">
+</head>
+<body>
+    <div id="container"></div>
+    <h1>Book List</h1>
+    <form>
+        <ul id="bookInfo">
+            <li>
+                <label for="title">제 목</label>
+                <input type="text" id="title">
+            </li>
+            <li>
+                <label for="author">저 자</label>
+                <input type="text" id="author">
+            </li>
+        </ul>
+        <button id="save">저장하기</button>
+        <button type="reset">취소하기</button>
+    </form>
+    <ul id="bookList">
+        <!-- 저장하기 클릭시 내용이 추가될 부분 -->
+    </ul>
+    <script src="js/bookList.js"></script>
+</body>
+</html>

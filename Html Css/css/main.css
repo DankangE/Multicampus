@@ -1,0 +1,103 @@
+/*==============Title Text================*/
+
+h1 {
+    color: rgb(95, 153, 5);
+}
+h2 {
+    color: rgb(12, 15, 150)
+}
+h3 {
+    color: rgb(12, 15, 150);
+}
+
+/*==============Area Text================*/
+
+div {
+    color: red;
+}
+span {
+    color: blue;
+}
+input {
+    color: rgb(5, 5, 5)
+}
+
+
+
+
+
+/*============== Personal Style ================*/
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.main_wrapper {
+    background-color: rgb(236, 227, 233);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+img {
+    width: 30%;
+    height: 15%;
+    border: 1px rgb(184, 18, 173) solid;
+    box-shadow: 5px 5px 25px rgba(185, 23, 139, 0.2);
+}
+
+/* ===== Title ===== */
+
+.main_title {
+    text-align: center;
+}
+.main {
+    text-align: center;
+}
+/* ===== Interface ===== */
+
+.interface_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.interface {
+    width: 250px;
+    margin: 15px;
+}
+
+.interface > h2 {
+    text-align: center;
+}
+
+.interface > h3 {
+    text-align: center;
+}
+
+.interface > ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.link > .link_item > h2 {
+    margin-left: 40px;
+}
+.link > .link_item > a {
+    margin-left: 50px;
+}

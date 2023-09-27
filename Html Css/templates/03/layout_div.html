@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 레이아웃</title>
+    <style>
+        #header {
+            background-color: #ff0;
+            height: 100px;
+        }
+        #nav {
+            background-color: #023636;
+            color: #fff;
+            width: 25%;
+            height: 300px;
+            float: left;
+        }
+        #section {
+            background-color: #fff;
+            width: 60%;
+            height: 280px;
+            float: left;
+            padding: 10px;
+        }
+        #footer {
+            background-color: #fd1;
+            height: 100px;
+            clear: both;
+        }
+        #header, #nav, #section, #footer {
+            text-align: center;
+        }
+        #header, #footer {
+            line-height: 100px;
+        }
+        #nav, #section {
+            line-height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <h1>div 요소를 이용한 레이아웃 설정</h1>
+    <div id="header">
+        <h2>헤더 영역</h2>
+    </div>
+    <div id="nav">
+        <h2>네비게이션 영역</h2>
+    </div>
+    <div id="section">
+        <h2>본문 영역</h2>
+    </div>
+    <div id="footer">
+        <h2>푸터 영역</h2>
+    </div>
+</body>
+</html>

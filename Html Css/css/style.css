@@ -1,0 +1,26 @@
+h2 {
+    color: blue;
+}
+p {
+    font-size: 14pt;
+    line-height: 2.0;
+}
+
+div section p.bluetext {
+    line-height: 4.0;
+    color: red;
+}
+
+#container {
+    width: 800px;
+    padding: 15px;
+    border: 1px solid gray;
+}
+.bluetext {
+    color: blue;
+}
+h2.accent {
+    background-color: #fff;
+    color: rgb(85, 8, 152);
+    padding: 5px;
+}

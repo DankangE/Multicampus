@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+        /* 모델 박스의 너비와 높이 지정 */
+        .box1 {
+            width: 400px;   /* 너비(고정) */
+            height: 100px; /* 높이(고정) */
+            background-color: rgb(134, 59, 109);
+        }
+        .box2 {
+            width: 50%;     /* 너비(브라우저 창의 50% 크기로 너비 지정) */
+            height: 100px; /* 높이(고정) */
+            padding: 10px;  /* 안쪽 여백 */
+            background-color: rgb(81, 147, 204);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

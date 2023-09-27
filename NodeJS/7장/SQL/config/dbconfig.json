@@ -1,0 +1,16 @@
+{
+  "localdb": {
+  "host": "localhost",
+  "user": "root",
+  "password": "123456",
+  "database": "testdb"
+  },
+
+  "awsdb": {
+  "host": "localhost",
+  "user": "admin",
+  "password": "123456",
+  "database": "emp_db"
+  }
+
+}
